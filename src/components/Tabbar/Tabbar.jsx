@@ -4,7 +4,9 @@ import React, { useState } from 'react'
 import { Badge, TabBar , NavBar} from 'antd-mobile'
 
 import Home from '../../pages/Home/index'
+
 import DeliciousCloud from '../../pages/DeliciousCloud/index'
+
 import JustMe from '../../pages/JustMe/index'
 
 import './TabbarStyles.css'
@@ -22,7 +24,7 @@ import {
   Switch,
   useHistory,
   useLocation,
-  MemoryRouter as Router
+  HashRouter as Router
 } from 'react-router-dom'
 
 const Bottom = () => {
