@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 
 import { useInterval } from '../../hooks/index'
 
+import { formatDuring } from '../../utils/utils' 
+
 import dayjs from "dayjs";
 
 import './style.less'
@@ -15,15 +17,15 @@ const TimeCom = () => {
 
     setInterval(() => {
 
-      const day1 = dayjs()
+      const day1 = new Date().getTime()
 
-      const day2 = dayjs('2022-01-01')
+      const day2 = new Date('2022-01-01 11:22:00').getTime()
 
-      const timeStamp = day1.diff(day2)
+      const timeStamp = day1 - day2
 
-      setTime(dayjs(timeStamp).format('DD天HH小时mm分钟ss秒SSS毫秒'))
+      setTime(formatDuring(timeStamp))
 
-    }, 1);
+    }, 60);
 
   }, [])
 
