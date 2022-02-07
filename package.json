@@ -28,7 +28,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://lvkun996.github.io/jiruhan",
+  "homepage": "./",
   "eslintConfig": {
     "extends": [ 
       "react-app",
