@@ -3,7 +3,8 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #ffffff;
+  background: url('../../static/common/background.png') no-repeat top left;
+  background-size: 100% 100%;
 }
 
 .top {
@@ -12,7 +13,6 @@
 }
 
 .main-container {
- 
   flex: 1;
   display: flex;
   justify-content: center;

@@ -6,8 +6,11 @@ import { formatDuring } from '../../utils/utils'
 
 import dayjs from "dayjs";
 
-import './style.less'
+import manImg from '../../static/home/man.jpg'
 
+import womanImg from '../../static/home/woman.jpg'
+
+import './style.css'
 
 const TimeCom = () => {
 
@@ -43,6 +46,12 @@ const Home = () => {
 
   return (
     <div className="home" >
+      <div className="home-user" >
+        <div className="user-ava" >
+          <img  className="manImg" src={manImg} alt="" />
+          <img className="womanImg" src={womanImg} alt="" />
+        </div>
+      </div>
       <TimeCom />
     </div>
   )

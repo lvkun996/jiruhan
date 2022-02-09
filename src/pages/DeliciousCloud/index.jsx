@@ -32,7 +32,6 @@ const DeliciousCloud = () => {
 
   return (
    <div>
-     223
      <DeliciousCloudCharts />
    </div> 
   )

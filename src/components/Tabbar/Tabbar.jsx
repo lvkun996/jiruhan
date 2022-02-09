@@ -9,6 +9,8 @@ import DeliciousCloud from '../../pages/DeliciousCloud/index'
 
 import JustMe from '../../pages/JustMe/index'
 
+import YiMaPage from '../../pages/YiMa/index'
+
 import './TabbarStyles.css'
 
 import {
@@ -26,6 +28,8 @@ import {
   useLocation,
   HashRouter as Router
 } from 'react-router-dom'
+
+const onePageName = ['/', '/todo', '/message', '/me']
 
 const Bottom = () => {
 
@@ -61,16 +65,23 @@ const Bottom = () => {
       icon: <UserOutline />,
     },
   ]
-//  activeKey={pathname} onChange={value => setRouteActive(value)}
   return (
-    <TabBar 
-      activeKey={pathname} 
-      onChange={value => setRouteActive(value)}
-    >
-      {tabs.map(item => (
-        <TabBar.Item key={item.key} icon={item.icon} title={item.title} />
-      ))}
-    </TabBar>
+    <>
+      {
+        onePageName.includes(pathname) ? 
+        <TabBar 
+        activeKey={pathname} 
+        onChange={value => setRouteActive(value)}
+        >
+          {tabs.map(item => (
+            <TabBar.Item key={item.key} icon={item.icon} title={item.title} />
+          ))}
+        </TabBar>
+        : 
+        null
+      }
+    </>
+ 
   )
 }
 
@@ -81,32 +92,44 @@ function Message() {
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default () => {
+
+  console.log(2233);
+
+  const pathname = '/'
+
+  const onChange = () => {
+    console.log(223);
+  }
+
   return (
-    <Router initialIndex={1} >
-      <div className='app'>
-        <div className='top'>
+    <Router initialIndex={1}   >
+        <div className='app'>
+        {/* <div className='top'>
           <NavBar>NavBar</NavBar>
-        </div>
+        </div> */}
         <div className='main-container'>
-          <Switch>
-            <Route exact path='/'>
-              <Home />
-            </Route>
-            <Route exact path='/todo'>
-              <DeliciousCloud />
-            </Route>
-            <Route exact path='/message'>
-              <Message />
-            </Route>
-            <Route exact path='/me'>
-              <JustMe />
-            </Route>
-          </Switch>
+            <Switch >
+                <Route exact path='/' >
+                  <Home />
+                </Route>
+                <Route exact path='/todo'>
+                  <DeliciousCloud />
+                </Route>
+                <Route exact path='/message'>
+                  <Message />
+                </Route>
+                <Route exact path='/me'>
+                  <JustMe />
+                </Route>
+                <Route exact path='/YiMa'>
+                  <YiMaPage />
+                </Route>
+            </Switch>
+          </div>
+          <div className='bottom'>
+            <Bottom />
+          </div>
         </div>
-        <div className='bottom'>
-          <Bottom />
-        </div>
-      </div>
     </Router>
   )
 }

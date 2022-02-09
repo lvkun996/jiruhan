@@ -1,0 +1,26 @@
+.yima-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+
+.current-law {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.key-law {
+  color: red;
+}
+
+.law {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}

@@ -1,0 +1,88 @@
+
+.just-me {
+  width: 100vw;
+  height: calc(100% - 100px);
+  overflow: hidden;
+}
+.user {
+  width: 343px;
+  height: 89px;
+  background: rgba(255, 255, 255, 0.63);
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.user-ava-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-name {
+  font-size: 22px;
+  font-family: PingFangSC-Semibold, PingFang SC;
+  font-weight: 600;
+  color: #1C1C1C;
+  margin-right: 20px;
+}
+
+
+.tag {
+  background: #E5EFFB;
+  border-radius: 11px;
+  padding: 6px 8px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: #1677FF;
+}
+
+
+.features {
+  width: 343px;
+  background: rgba(255, 255, 255, 0.63);
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.feature-item {
+  height: 58px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.features .feature-item:last-child {
+  border-bottom: none;
+}
+
+.feature-item-label {
+  font-size: 15px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: #333333;
+}
+
+.icon {
+
+}
+
+.right-arrow {
+  width: 6px;
+  height: 6px;
+}
