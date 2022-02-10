@@ -1,9 +1,13 @@
 
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import { Button,  Modal } from 'antd-mobile'
 
 const PhotoWall = () => {
+
+  useEffect(() => {
+    document.title = '快❤'
+  }, [])
 
   const goPhotoPage = () => {
     window.location.href = 'https://lvkun996.github.io/photo/'

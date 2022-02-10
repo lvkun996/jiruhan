@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 import YiMaPage from '../YiMa/index'
 
@@ -34,6 +34,12 @@ const features = [
 ]
 
 const JustMe = () => {
+
+
+  useEffect(() => {
+    document.title = '乐❤'
+  }, [])
+
 
   const history = useHistory()
 

@@ -10,6 +10,9 @@ const DemoWordCloud = () => {
   //   value: item.value,
   // }));
   
+  useEffect(() => {
+    document.title = '日❤'
+  }, [])
 
   const config = {
     data: foodData,

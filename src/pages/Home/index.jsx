@@ -14,7 +14,12 @@ import './style.css'
 
 const TimeCom = () => {
 
+  
   const [ time, setTime ] = useState('海绵宝宝还在算时间...')
+
+  useEffect(() => {
+    document.title = '生❤'
+  }, [])
 
   useEffect(() => {
 
