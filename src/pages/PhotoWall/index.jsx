@@ -6,7 +6,7 @@ import { Button,  Modal } from 'antd-mobile'
 const PhotoWall = () => {
 
   const goPhotoPage = () => {
-    window.location.href = 'https://www.baidu.com'
+    window.location.href = 'https://lvkun996.github.io/photo/'
   }
 
   return (

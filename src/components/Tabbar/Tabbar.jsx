@@ -48,22 +48,22 @@ const Bottom = () => {
   const tabs = [
     {
       key: '/',
-      title: 'Hello',
+      title: '首页',
       icon: <AppOutline />,
     },
     {
       key: '/todo',
-      title: 'Delicious Cloud',
+      title: '好吃的',
       icon: <HeartOutline />,
     },
     {
       key: '/PhotoWall',
-      title: 'Photo Wall',
+      title: '照片',
       icon: <PictureOutline />,
     },
     {
       key: '/me',
-      title: 'just me',
+      title: '我的',
       icon: <UserOutline />,
     },
   ]

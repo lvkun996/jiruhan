@@ -86,3 +86,8 @@
   width: 6px;
   height: 6px;
 }
+
+.adm-image-img {
+  object-fit: cover !important;
+  height: 400px;
+}

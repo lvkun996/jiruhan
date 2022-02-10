@@ -15,7 +15,7 @@ const YiMa = () => {
     },
     {
       time: '2022-02-07',
-      duraDay: 1,
+      duraDay: 4,
     },
   ];
   const config = {

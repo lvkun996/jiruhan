@@ -5,12 +5,14 @@ import { foodData } from './food'
 
 const DemoWordCloud = () => {
 
-  const data = foodData.map((item) => ({
-    name: item.name,
-    value: item.value,
-  }));
+  // const data = foodData.map((item) => ({
+  //   name: item.name,
+  //   value: item.value,
+  // }));
+  
+
   const config = {
-    data,
+    data: foodData,
     wordField: 'name',
     weightField: 'value',
     colorField: 'name',
@@ -20,15 +22,16 @@ const DemoWordCloud = () => {
       rotation: 0,
     },
 
-    placementStrategy(word, index, words) {
-      const width = this.ele.clientWidth;
-      const height = this.ele.clientHeight;
-      const length = words.length;
-      return {
-        x: (width / (length + 1)) * (index + 1),
-        y: (height / (length + 1)) * (index + 1),
-      };
-    },
+    // placementStrategy (word, index, words) {
+    //   const width = this.ele.clientWidth;
+    //   const height = this.ele.clientHeight;
+    //   const length = words.length;
+    //   return {
+    //     x: (width / (length + 1)) * (index + 1),
+    //     y: (height / (length + 1)) * (index + 1),
+    //   };
+    // },
+
   };
   return <WordCloud {...config} />;
 };

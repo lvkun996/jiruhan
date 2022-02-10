@@ -10,12 +10,15 @@ import {
   HashRouter as Router
 } from 'react-router-dom'
 
-
 import './style.css'
 
 import ava from '../../static/userAva.jpg'
 
 import RightArrow from '../../static/common/triangle.png'
+
+import {  Dialog,  } from 'antd-mobile'
+
+import warnPic from '../../static/warn.jpg'
 
 // const features = [ '姨妈周期', 'To Do List', '照片']
 
@@ -25,12 +28,8 @@ const features = [
     routeLabel: '姨妈周期'
   },
   {
-    routePath: 'ToDoList',
-    routeLabel: 'To Do List'
-  },
-  {
     routePath: 'Photo',
-    routeLabel: '照片'
+    routeLabel: '想到了再加 这里先空着'
   }
 ]
 
@@ -39,7 +38,15 @@ const JustMe = () => {
   const history = useHistory()
 
   const goPage = (routePath) => {
-    history.push(routePath)
+    if (routePath === 'Photo') {
+      Dialog.alert({
+        image: warnPic,
+        title: 'warning',
+        content: '说了想到了再加你不信是吧'
+      })
+    } else {
+      history.push(routePath)
+    }
   }
 
   return (
