@@ -11,14 +11,16 @@ import JustMe from '../../pages/JustMe/index'
 
 import YiMaPage from '../../pages/YiMa/index'
 
+import PhotoWall from '../../pages/PhotoWall/index'
+
 import './TabbarStyles.css'
 
 import {
   AppOutline,
-  MessageOutline,
-  MessageFill,
   UnorderedListOutline,
   UserOutline,
+  PictureOutline,
+  HeartOutline
 } from 'antd-mobile-icons'
 
 import {
@@ -29,7 +31,7 @@ import {
   HashRouter as Router
 } from 'react-router-dom'
 
-const onePageName = ['/', '/todo', '/message', '/me']
+const onePageName = ['/', '/todo', '/PhotoWall', '/me']
 
 const Bottom = () => {
 
@@ -52,12 +54,12 @@ const Bottom = () => {
     {
       key: '/todo',
       title: 'Delicious Cloud',
-      icon: <UnorderedListOutline />,
+      icon: <HeartOutline />,
     },
     {
-      key: '/message',
+      key: '/PhotoWall',
       title: 'Photo Wall',
-      icon: <MessageOutline />,
+      icon: <PictureOutline />,
     },
     {
       key: '/me',
@@ -115,8 +117,8 @@ export default () => {
                 <Route exact path='/todo'>
                   <DeliciousCloud />
                 </Route>
-                <Route exact path='/message'>
-                  <Message />
+                <Route exact path='/PhotoWall'>
+                  <PhotoWall />
                 </Route>
                 <Route exact path='/me'>
                   <JustMe />

@@ -44,21 +44,21 @@ const JustMe = () => {
 
   return (
     <div className='just-me' > 
-      <div className='user' >
+      <div className='just-me-user' >
 
-          <div className='user-ava' >
+          <div className='just-me-user-ava' >
               <img 
-                className='user-ava-img' 
+                className='just-me-user-ava-img' 
                 src={ava} 
                 alt=""
               />
           </div>
         
-          <div className='user-name' >
+          <div className='just-me-user-name' >
               姬儒涵
           </div>
 
-          <div className='tag' >
+          <div className='just-me-tag' >
               小公主好吧(*^▽^*)
           </div>
 
