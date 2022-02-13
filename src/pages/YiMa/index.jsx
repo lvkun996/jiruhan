@@ -53,7 +53,7 @@ const YiMa = () => {
   const history = useHistory()
 
   const onBack = () => {
-    history.push('/me')
+    history.goBack()
   }
 
   return <div>

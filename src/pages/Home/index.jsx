@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import { useInterval } from '../../hooks/index'
-
-import { formatDuring } from '../../utils/utils' 
-
-import dayjs from "dayjs";
+import { formatDuring, getDeviceModel } from '../../utils/utils'
 
 import manImg from '../../static/home/man.jpg'
 
@@ -13,13 +9,8 @@ import womanImg from '../../static/home/woman.jpg'
 import './style.css'
 
 const TimeCom = () => {
-
   
   const [ time, setTime ] = useState('海绵宝宝还在算时间...')
-
-  useEffect(() => {
-    document.title = '生❤'
-  }, [])
 
   useEffect(() => {
 
@@ -27,7 +18,7 @@ const TimeCom = () => {
 
       const day1 = new Date().getTime()
 
-      const day2 = new Date('2022-01-01 11:22:00').getTime()
+      const day2 = getDeviceModel() === 1 ?  new Date('2022/01/01 11:22:00').getTime() : new Date('2022-01-01 11:22:00').getTime()
 
       const timeStamp = day1 - day2
 
@@ -48,6 +39,12 @@ const TimeCom = () => {
 }
 
 const Home = () => {
+
+  useEffect(() => {
+    document.title = '生❤'
+    console.log('223');
+  }, [])
+
 
   return (
     <div className="home" >

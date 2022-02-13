@@ -28,6 +28,10 @@ const features = [
     routeLabel: '姨妈周期'
   },
   {
+    routePath: 'Tag',
+    routeLabel: '标签'
+  },
+  {
     routePath: 'Photo',
     routeLabel: '想到了再加 这里先空着'
   }
@@ -72,7 +76,7 @@ const JustMe = () => {
           </div>
 
           <div className='just-me-tag' >
-              小公主好吧(*^▽^*)
+            你就刷抖音吧😠
           </div>
 
       </div>

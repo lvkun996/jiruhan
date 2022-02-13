@@ -13,6 +13,8 @@ import YiMaPage from '../../pages/YiMa/index'
 
 import PhotoWall from '../../pages/PhotoWall/index'
 
+import Tag from '../../pages/Tag/index'
+
 import './TabbarStyles.css'
 
 import {
@@ -120,11 +122,14 @@ export default () => {
                 <Route exact path='/PhotoWall'>
                   <PhotoWall />
                 </Route>
-                <Route exact path='/me'>
+                <Route exact path='/me'  >
                   <JustMe />
                 </Route>
                 <Route exact path='/YiMa'>
                   <YiMaPage />
+                </Route>
+                <Route exact  path='/Tag' >
+                  <Tag />
                 </Route>
             </Switch>
           </div>
