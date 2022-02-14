@@ -26,7 +26,7 @@ const TimeCom = () => {
     setInterval(() => {
 
       const day1 = new Date().getTime()
-
+      
       const day2 = new Date('2022-01-01 11:22:00').getTime()
 
       const timeStamp = day1 - day2
