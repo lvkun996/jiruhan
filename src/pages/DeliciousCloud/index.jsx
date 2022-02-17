@@ -11,7 +11,7 @@ const DemoWordCloud = () => {
   // }));
   
   useEffect(() => {
-    document.title = '日❤'
+    document.title = '见'
   }, [])
 
   const config = {
@@ -23,17 +23,7 @@ const DemoWordCloud = () => {
       fontFamily: 'Verdana',
       fontSize: 16,
       rotation: 0,
-    },
-
-    // placementStrategy (word, index, words) {
-    //   const width = this.ele.clientWidth;
-    //   const height = this.ele.clientHeight;
-    //   const length = words.length;
-    //   return {
-    //     x: (width / (length + 1)) * (index + 1),
-    //     y: (height / (length + 1)) * (index + 1),
-    //   };
-    // },
+    }
 
   };
   return <WordCloud {...config} />;

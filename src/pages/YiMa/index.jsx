@@ -15,7 +15,7 @@ const YiMa = () => {
     },
     {
       time: '2022-02-07',
-      duraDay: 4,
+      duraDay: 7,
     },
   ];
   const config = {
@@ -53,7 +53,7 @@ const YiMa = () => {
   const history = useHistory()
 
   const onBack = () => {
-    history.push('/me')
+    history.goBack()
   }
 
   return <div>

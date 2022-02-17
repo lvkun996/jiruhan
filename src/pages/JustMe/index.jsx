@@ -20,12 +20,14 @@ import {  Dialog,  } from 'antd-mobile'
 
 import warnPic from '../../static/warn.jpg'
 
-// const features = [ '姨妈周期', 'To Do List', '照片']
-
 const features = [
   {
     routePath: 'YiMa',
     routeLabel: '姨妈周期'
+  },
+  {
+    routePath: 'Tag',
+    routeLabel: '标签'
   },
   {
     routePath: 'Photo',
@@ -35,11 +37,9 @@ const features = [
 
 const JustMe = () => {
 
-
   useEffect(() => {
-    document.title = '乐❤'
+    document.title = '呀'
   }, [])
-
 
   const history = useHistory()
 
@@ -62,17 +62,17 @@ const JustMe = () => {
           <div className='just-me-user-ava' >
               <img 
                 className='just-me-user-ava-img' 
-                src={ava} 
+                src={ava}
                 alt=""
               />
           </div>
         
           <div className='just-me-user-name' >
-              姬儒涵
+              姬贴贴
           </div>
 
           <div className='just-me-tag' >
-              小公主好吧(*^▽^*)
+            一见倾城
           </div>
 
       </div>

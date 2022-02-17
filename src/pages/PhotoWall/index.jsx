@@ -6,7 +6,7 @@ import { Button,  Modal } from 'antd-mobile'
 const PhotoWall = () => {
 
   useEffect(() => {
-    document.title = '快❤'
+    document.title = '你'
   }, [])
 
   const goPhotoPage = () => {
