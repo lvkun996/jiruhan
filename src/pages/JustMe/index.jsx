@@ -72,7 +72,7 @@ const JustMe = () => {
           </div>
 
           <div className='just-me-tag' >
-            我好想你
+            我好想你 不能自己
           </div>
 
       </div>
