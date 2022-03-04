@@ -66,7 +66,8 @@ const Meet = () => {
       {`离下次见面还有`}
   </div>
   <div className="commemorate-day-time" >
-    { time }
+    {/* { time } */}
+    遥遥而无期
   </div>
 </div>
 }
