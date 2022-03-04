@@ -68,11 +68,11 @@ const JustMe = () => {
           </div>
         
           <div className='just-me-user-name' >
-              姬贴贴
+            姬贴贴
           </div>
 
           <div className='just-me-tag' >
-            我好想你 不能自己
+            我好想你 已经不能自己🤧
           </div>
 
       </div>
