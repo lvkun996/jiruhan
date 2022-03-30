@@ -30,6 +30,14 @@ const features = [
     routeLabel: '标签'
   },
   {
+    routePath: 'versionRecords',
+    routeLabel: '更新记录'
+  },
+  // {
+  //   routePath: 'TimeLine',
+  //   routeLabel: '时间线'
+  // },
+  {
     routePath: 'Photo',
     routeLabel: '想到了再加 这里先空着'
   }

@@ -15,6 +15,10 @@ import PhotoWall from '../../pages/PhotoWall/index'
 
 import Tag from '../../pages/Tag/index'
 
+import TimeLine from '../../pages/TimeLine/index'
+
+import VersionRecords from '../../pages/VersionRecords/index'
+
 import './TabbarStyles.css'
 
 import {
@@ -130,6 +134,12 @@ export default () => {
                 </Route>
                 <Route exact  path='/Tag' >
                   <Tag />
+                </Route>
+                <Route exact  path='/TimeLine' >
+                  <TimeLine />
+                </Route>
+                <Route exact  path='/VersionRecords' >
+                  <VersionRecords />
                 </Route>
             </Switch>
           </div>
