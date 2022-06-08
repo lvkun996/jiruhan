@@ -21,6 +21,10 @@ const YiMa = () => {
       time: '2022-03-13',
       duraDay: 7,
     },
+    {
+      time: '2022-05-24',
+      duraDay: 5,
+    },
   ];
   const config = {
     data,
@@ -70,8 +74,8 @@ const YiMa = () => {
     </div>
     <Column {...config} />
     <div className='current-law' >
-        <div>当前间隔：<span className='key-law' >28天</span></div>
-        <div>预测下次：<span className='key-law' >2022-04-04</span></div>
+        <div>当前间隔：<span className='key-law' >37.5天</span></div>
+        <div>预测下次：<span className='key-law' >2022-07-04</span></div>
     </div>
     <div className='law' >
       姨妈是否规律、持续时间、预测下次时间
