@@ -25,6 +25,14 @@ const YiMa = () => {
       time: '2022-05-24',
       duraDay: 5,
     },
+    {
+      time: '2022-05-24',
+      duraDay: 5,
+    },
+    {
+      time: '2022-07-19',
+      duraDay: 5,
+    },
   ];
   const config = {
     data,
