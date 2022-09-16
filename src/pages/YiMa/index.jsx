@@ -33,6 +33,10 @@ const YiMa = () => {
       time: '2022-07-19',
       duraDay: 5,
     },
+    {
+      time: '2022-09-07',
+      duraDay: 7,
+    }
   ];
   const config = {
     data,
