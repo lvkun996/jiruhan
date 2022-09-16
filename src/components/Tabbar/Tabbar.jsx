@@ -19,6 +19,8 @@ import TimeLine from '../../pages/TimeLine/index'
 
 import VersionRecords from '../../pages/VersionRecords/index'
 
+import Gamble from '../../pages/Gamble/index'
+
 import './TabbarStyles.css'
 
 import {
@@ -140,6 +142,9 @@ export default () => {
                 </Route>
                 <Route exact  path='/VersionRecords' >
                   <VersionRecords />
+                </Route>
+                <Route exact  path='/Gamble' >
+                  <Gamble />
                 </Route>
             </Switch>
           </div>
