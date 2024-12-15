@@ -16,6 +16,8 @@ const VersionRecords= () => {
         <Steps current={1} direction='vertical' >
           <Step title='音乐库' status='error' description='播放歌曲功能' />
           <Step title='增加版本记录' status='finish' description='2022-03-30' />
+          <Step title='终于见面了' status='finish' description='2022-07-07' />
+          <Step title='分开' status='finish' description='2024-12-015' />
         </Steps>
     </div>
   )

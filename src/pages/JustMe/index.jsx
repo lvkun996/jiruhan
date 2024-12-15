@@ -21,10 +21,10 @@ import {  Dialog,  } from 'antd-mobile'
 import warnPic from '../../static/warn.jpg'
 
 const features = [
-  // {
-  //   routePath: 'YiMa',
-  //   routeLabel: '姨妈周期'
-  // },
+  {
+    routePath: 'YiMa',
+    routeLabel: '姨妈周期'
+  },
   {
     routePath: 'Tag',
     routeLabel: '标签'
